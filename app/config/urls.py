@@ -29,6 +29,7 @@ urlpatterns = [
     path('api/auth/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/papers/', include('app.papers.urls')),
     path('api/chat/', include('app.chat.urls')),
+    path('api/user/', include('app.users.urls')),
 ]
 
 if settings.DEBUG:
